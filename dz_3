@@ -1,0 +1,73 @@
+run = True
+a = int(input("Введите номер задания: "))
+while run:
+    if a == 1:
+        class School():
+            def __init__(self):
+                self.name = "Иван"
+                self.clacc = "7 М"
+            def show(self):
+                print(f"Имя:{self.name}")
+                print(f"Класс:{self.clacc}")
+
+        print("Привет!")
+        school = School()
+        school.show()
+    elif a == 2:
+        class Zoo():
+            def __init__(self):
+                self.name = "Тигр"
+                self.voice = "рррррр"
+            def show(self):
+                print(f"Имя:{self.name}")
+                print(f"Голос:{self.voice}")
+
+        print("Голос животного:")
+        zoo = Zoo()
+        zoo.show()
+    elif a == 3:
+        class Boock():
+            def __init__(self):
+                self.name = "Война и мир"
+                self.avtor = "Л.Толстой"
+            def show(self):
+                print(f"Название книги:{self.name}")
+                print(f"Автор:{self.avtor}")
+
+        print("Книга:")
+        boock = Boock()
+        boock.show()
+    elif a == 4:
+        class Fruct():
+            def __init__(self):
+                self.name = "Апельсин"
+                self.color = "Оранжевый"
+            def show(self):
+                print(f"Название фрукта:{self.name}")
+                print(f"Цвет:{self.color}")
+
+        print("Фрукт:")
+        fruct = Fruct()
+        fruct.show()
+    elif a == 5:
+        cofe = 100
+        voda = 100
+        while run:
+            p = int(input("Колличество кружек кофе: "))
+            class Coffe():
+                def __init__(self):
+                    self.col_vodi = voda
+                    self.col_coffe = cofe
+                def show(self):
+                    print(f"Осталось воды в автомате:{self.col_vodi}")
+                    print(f"Осталось кофе в автомате:{self.col_coffe}")
+
+            if voda > 0:
+                voda = voda - 5 * p
+                cofe = cofe - 5 * p
+            print("Кофе:")
+            coffe = Coffe()
+            coffe.show()
+    else:
+        print("Неверный номер задания")
+    a = int(input("Введите номер задания: "))
