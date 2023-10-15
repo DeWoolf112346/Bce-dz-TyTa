@@ -1,0 +1,24 @@
+class Person():
+    def __init__(self, name, age):
+        print(name, age)
+    def say_hello(self, name, age):
+        print(f"Hello: {name} {age}!")
+    def Birthday(self, name, age):
+        age += 1
+        print(name, age)
+    def is_adult(self, age):
+        if age >= 18:
+            return True
+        else:
+            return False
+    def kto_vzrosly(self, age):
+        if age >= 18:
+            return True
+        if age <= 18:
+            return False
+
+p = Person("Ivan", 13)
+p.say_hello("Ivan", 13)
+p.Birthday("Ivan", 13)
+print(p.is_adult(13))
+print(f"Ivan -- {p.kto_vzrosly(13)}, John -- {p.kto_vzrosly(22)}")
