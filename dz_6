@@ -1,0 +1,53 @@
+class Rectangle():
+    def __init__(self):
+        self.width = w
+        self.length = l
+        self.res1 = round(self.width * self.length)
+        self.res2 = round(self.width * 2 + self.length * 2)
+    def area(self):
+        print("Площадь:", self.res1)
+    def perimeter(self):
+        print("Периметр:", self.res2)
+w = 10
+l = 5
+print()
+print("Прямоугольник")
+rectangle = Rectangle()
+rectangle.area()
+rectangle.perimeter()
+
+class Circle():
+    def __init__(self):
+        self.radius = r
+        self.pi = p
+        self.a = round(self.pi * self.radius ** 2)
+        self.pe = round(2 * self.pi * self.radius)
+
+    def area(self):
+        print("Площадь:", self.a)
+    def perimeter(self):
+        print("Периметр:", self.pe)
+
+r = 10
+p = 3.14
+print()
+print("Круг")
+circle = Circle()
+circle.area()
+circle.perimeter()
+
+class Triangle():
+    def __init__(self):
+        self.height = h
+        self.base = b
+        self.res = round(0.5 * b * h)
+    def area(self):
+        print("Площадь:", self.res)
+
+
+b = 10
+h = 30
+print()
+print("Треугольник")
+triangle = Triangle()
+triangle.area()
