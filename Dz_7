@@ -1,0 +1,76 @@
+#-----------------------------------------1
+class Product():
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+class Book(Product):
+    def __init__(self, name, price):
+        super(name, price)
+    def show(self):
+        print(f"Книга {self.name} стоит {self.price} рублей")
+class Toy(Product):
+    def __init__(self, name, price):
+        super(name, price)
+    def show(self):
+        print(f"Игрушка {self.name} стоит {self.price} рублей")
+product1 = Product("Hello Neighbour", 500)
+product2 = Product("Мягкий мишка", 200)
+print("")
+Book.show(product1)
+print("")
+Toy.show(product2)
+print("")
+#-----------------------------------------------2
+class Car():
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+class Sedan(Car):
+    def __init__(self, make, model):
+        super(make, model)
+    def show(self):
+        print(self.model, self.make)
+    def start_engine(self):
+        print("Двигатель включён")
+    def stop_engine(self):
+        print("Двигатель выключен")
+class SUV(Car):
+    def __init__(self, make, model):
+        super(make, model)
+    def show(self):
+        print(self.model, self.make)
+    def start_engine(self):
+        print("Двигатель включён")
+    def stop_engine(self):
+        print("Двигатель выключен")
+car1 = Car("Sedan", "Lada")
+car2 = Car("SUV", "CS75 Plus")
+Sedan.show(car1)
+Sedan.start_engine(car2)
+print("")
+SUV.show(car2)
+SUV.stop_engine(car1)
+print("")
+#-----------------------------------------3
+class Book():
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+class Fiction(Book):
+    def __init__(self, title, author):
+        super(title, author)
+    def show(self):
+        print(f"Автор: {self.author} \nПроизведение: {self.title} \nНе вымысел")
+class NonFiction(Book):
+    def __init__(self, title, author):
+        super(title, author)
+    def show(self):
+        print(f"Автор: {self.author} \nПроизведение: {self.title} \nВымысел")
+
+
+
+book1 = Book("Дубровский", "Пушкин")
+book2 = Book("Оно", "Стивен Кинг")
+Fiction.show(book1)
+print("")
+NonFiction.show(book2)
